@@ -6,10 +6,11 @@ import {
 } from "@vime/react";
 
  function VideoPlayer() {
-
+  var message
+  var currentTime=225
   return (
     <div className="video">
-    <Player>
+    <Player currentTime={currentTime} controls autoplay>
       <Video crossOrigin=""  poster="https://media.vimejs.com/poster.png">
         <source data-src="https://media.vimejs.com/720p.mp4" type="video/mp4" />
         <track
