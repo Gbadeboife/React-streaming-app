@@ -10,7 +10,7 @@ import {
   var currentTime=225
   return (
     <div className="video">
-    <Player currentTime={currentTime} controls autoplay>
+    <Player currentTime={currentTime}  autoplay>
       <Video crossOrigin=""  poster="https://media.vimejs.com/poster.png">
         <source data-src="https://media.vimejs.com/720p.mp4" type="video/mp4" />
         <track
