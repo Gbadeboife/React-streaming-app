@@ -2,17 +2,21 @@ import React from "react";
 import {
   Player,
   DefaultUi,
-  Video
+  Video,
+  
 } from "@vime/react";
 
+import '@vime/core/themes/default.css';
+
+
  function VideoPlayer() {
-  var message
-  var currentTime=225
+
+  
   return (
     <div className="video">
-    <Player currentTime={currentTime}  autoplay>
+    <Player  autoplay>
       <Video crossOrigin=""  poster="https://media.vimejs.com/poster.png">
-        <source data-src="https://media.vimejs.com/720p.mp4" type="video/mp4" />
+        <source  data-src="https://media.vimejs.com/720p.mp4" type="video/mp4" />
         <track
           default
           kind="subtitles"
@@ -22,7 +26,9 @@ import {
         />
       </Video>
       <DefaultUi ></DefaultUi>
+      
     </Player>
+      
     </div>
   );
 }

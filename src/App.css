@@ -36,7 +36,13 @@ a{
   width: 70%;
   margin: auto;
 }
-
+.message{
+  border: 1px solid black;
+  font-size: 40px;
+}
+.message button{
+  padding: 15px 30px;
+}
 @media screen and (max-width:1000px){
   .home,.video{
     width: 60%
